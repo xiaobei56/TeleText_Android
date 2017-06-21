@@ -3,4 +3,87 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="list_item_background_normal">#FFFFFF</color>
+    <color name="list_item_background_press">#1AFFFFFF</color>
+    <color name="title_bar_menu_background_normal">#383838</color>
+    <color name="title_bar_menu_background_press">#383838</color>
+    <color name="button_background_disable">#9A000000</color>
+    <color name="button_background_normal">#9A000000</color>
+    <color name="button_background_press">#F28D00</color>
+    <color name="button_login_background_normal">#bb3200</color>
+    <color name="button_login_background_press">#FD4401</color>
+    <color name="dialog_detail_information_background">#9A000000</color>
+    <color name="dialog_common_background">#BA000000</color>
+    <color name="edit_background">#0DFFFFFF</color>
+    <color name="separator_line_short">#434343</color>
+    <color name="separator_line_long">#434343</color>
+    <color name="corner_icon_background">#a40000</color>
+    <color name="text_warning">#FD4401</color>
+    <color name="text_icon_title">#CCCCCC</color>
+    <color name="text_content">#0DFFFFFF</color>
+    <color name="text_activity_title">#FCFCF5</color>
+    <color name="text_form_item_title">#FCFCF5</color>
+    <color name="text_form_item_sub_title">#bababa</color>
+    <color name="text_form_content">#CCCCCC</color>
+    <color name="text_edit_hint">#999999</color>
+    <color name="text_edit">#bababa</color>
+    <color name="text_bottom_bar">#bababa</color>
+    <color name="text_button_main">#bababa</color>
+    <color name="text_common_dialog_content">#a40000</color>
+    <color name="text_common_dialog_button">#CCCCCC</color>
+    <color name="text_detail_color">#999999</color>
+
+    <color name="form_bg">#f9f9f9</color>
+    <color name="form_item_bg">#ffffff</color>
+    <color name="enum_bg">#1b1b1b</color>
+    <color name="form_label_text_color">#CCCCCC</color>
+    <color name="form_edit_bg_color">#00000000</color>
+    <color name="form_edit_text_color">#999999</color>
+    <color name="form_edit_hint_color">#666666</color>
+    <color name="color_action_bar_back_ground">#00000000</color>
+    <color name="color_action_bar_title">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+
+
+
+    <color name="orange">#ff7400</color>
+    <color name="purple">#cd0074</color>
+    <color name="blue">#4671d5</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="dialog_text_color">#999999</color>
+    <color name="dialog_bg_shape_color">#9A000000</color>
+
+
+
+    <!-- new add -->
+    <color name="color_main">#d94630</color>
+    <color name="color_background">#f9f9f9</color>
+    <color name="color_div_line">#f9f9f9</color>
+    <color name="color_press">#1a000000</color>
+    <color name="color_up">#ffffff</color>
+
+
+    <color name="text_color_dark_black">#5e5e5e</color>
+    <color name="text_color_light_black">#939393</color>
+    <color name="text_color_white">#ffffff</color>
+    <color name="text_color_red">#d94630</color>
+    <color name="text_color_orange">#fda33c</color>
+    <color name="text_color_green">#61d007</color>
+    <color name="text_color_blue">#5f93e7</color>
+
+    <color name="btn_bg_splash">#939393</color>
 </resources>

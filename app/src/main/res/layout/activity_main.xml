@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="cn.gridlife.teletext.MainActivity">
+    tools:context="cn.gridlife.teletext.activity.MainActivity">
 
     <FrameLayout
         android:id="@+id/content"

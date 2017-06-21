@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/sp_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher_round"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/btn_jump_splash"
+        android:layout_width="@dimen/btn_bg_width_splash"
+        android:layout_height="@dimen/btn_bg_height_splash"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/margin_twenty"
+        android:layout_marginTop="@dimen/margin_twenty"
+        android:background="@drawable/selector_btn_bg_splash"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/btn_min_size"
+        android:visibility="visible"
+        android:text="dddddd"/>
+</RelativeLayout>

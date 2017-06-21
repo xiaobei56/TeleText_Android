@@ -1,4 +1,4 @@
-package cn.gridlife.teletext;
+package cn.gridlife.teletext.activity;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -6,6 +6,8 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import cn.gridlife.teletext.R;
 
 public class MainActivity extends AppCompatActivity {
 
