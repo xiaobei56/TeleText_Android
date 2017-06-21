@@ -5,14 +5,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import java.util.List;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import cn.gridlife.bzblibrary.utils.BzbToast;
 import cn.gridlife.teletext.R;
+import pub.devrel.easypermissions.AppSettingsDialog;
+import pub.devrel.easypermissions.EasyPermissions;
+
+import static android.content.ContentValues.TAG;
 
 /**
  * cn.gridlife.teletext.activity
@@ -20,7 +28,7 @@ import cn.gridlife.teletext.R;
  * Created by BEI on 2017/6/21.
  */
 
-public class SplashActivity extends Activity {
+public class SplashActivity extends Activity implements EasyPermissions.PermissionCallbacks{
 	@BindView(R.id.btn_jump_splash)
 	Button btnJump;
 	private CountDownTimer countDownTimer = new CountDownTimer(4000, 1000) {
@@ -46,10 +54,47 @@ public class SplashActivity extends Activity {
 		startClock();
 	}
 
+
 	private void checkSDCardPermission() {
 
 	}
+	@Override
+	public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+		super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
+		// Forward results to EasyPermissions
+		EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
+
+	}
+
+	@Override
+	public void onPermissionsGranted(int requestCode, List<String> list) {
+		// Some permissions have been granted
+		// ...
+	}
+
+	@Override
+	public void onPermissionsDenied(int requestCode, List<String> list) {
+		// Some permissions have been denied
+		// ...
+		Log.d(TAG, "onPermissionsDenied:" + requestCode + ":" + list.size());
+
+		// (Optional) Check whether the user denied any permissions and checked "NEVER ASK AGAIN."
+		// This will display a dialog directing them to enable the permission in app settings.
+		if (EasyPermissions.somePermissionPermanentlyDenied(this, list)) {
+			new AppSettingsDialog.Builder(this).build().show();
+		}
+	}
+	@Override
+	public void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+
+		if (requestCode == AppSettingsDialog.DEFAULT_SETTINGS_REQ_CODE) {
+			// Do something after user returned from app settings screen, like showing a Toast.
+			Toast.makeText(this, "", Toast.LENGTH_SHORT)
+					.show();
+		}
+	}
 	@OnClick({R.id.sp_bg, R.id.btn_jump_splash})
 	public void onViewClicked(View view) {
 		switch (view.getId()) {
@@ -66,8 +111,7 @@ public class SplashActivity extends Activity {
 	 * Splash页 跳转到广告
 	 */
 	private void gotoWebActivity() {
-		Toast.makeText(this, "跳转广告", Toast.LENGTH_SHORT).show();
-		this.finish();
+		BzbToast.showToast(this,"广告");
 	}
 
 	private void gotoLoginOrMainActivity() {
@@ -82,6 +126,8 @@ public class SplashActivity extends Activity {
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
+		if (countDownTimer != null)
+			countDownTimer.cancel();
 		finish();
 	}
 }
