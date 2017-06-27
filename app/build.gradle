@@ -27,12 +27,19 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:design:25.3.1'
+//    支持 vector 图片资源
     compile 'com.android.support:support-vector-drawable:25.3.1'
+//    单元测试
     testCompile 'junit:junit:4.12'
+//  ButterKnife
     compile 'com.jakewharton:butterknife:8.6.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+// 权限申请
     compile 'pub.devrel:easypermissions:0.4.2'
-
+// 内存检测工具
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
     compile project(path: ':bzblibrary')
 
 
