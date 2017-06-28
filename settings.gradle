@@ -1,1 +1,1 @@
-include ':app', ':bzblibrary'
+include ':app', ':bzblibrary', ':mydemo'
