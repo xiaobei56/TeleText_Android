@@ -24,8 +24,8 @@ public class MainActivity extends Activity {
     @BindView(R.id.lv_main_activity)
     ListView listView;
     MyAdapter adapter;
-    String[] titles = {"1.MyRecyclerView基本使用"};
-    String[] contents = {"RecyclerView的基本使用"};
+    String[] titles = {"1.MyRecyclerView基本使用","2. PopupWindow"};
+    String[] contents = {"RecyclerView的基本使用",""};
     MainListViewBean bean;
     ArrayList<MainListViewBean> list = new ArrayList<>();
     Context context;
@@ -58,8 +58,8 @@ public class MainActivity extends Activity {
             switch (position) {
                 case 0:
                     Router.build("MyRecyclerView").go(MainActivity.this);
-
                     break;
+
             }
         }
     }

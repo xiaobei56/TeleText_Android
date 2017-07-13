@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TeleText_Android.iml" filepath="$PROJECT_DIR$/TeleText_Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bzblibrary/bzblibrary.iml" filepath="$PROJECT_DIR$/bzblibrary/bzblibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mydemo/mydemo.iml" filepath="$PROJECT_DIR$/mydemo/mydemo.iml" />
     </modules>
   </component>
 </project>
